@@ -40,4 +40,4 @@ jobs:
         env:
           USERNAME: ${{ github.actor }}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./gradlew publishAllPublicationsToGitHubPackagesRepository
+        run: ./gradlew :kotlin-js-fix-gradle-plugin:publish
