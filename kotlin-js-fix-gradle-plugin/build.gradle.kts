@@ -14,7 +14,7 @@ kotlin {
 }
 
 group = "me.nathanfallet.kotlinjsfix"
-version = "1.0.1"
+version = "1.0.2"
 
 gradlePlugin {
     website = "https://github.com/nathanfallet/kotlin-js-fix"
