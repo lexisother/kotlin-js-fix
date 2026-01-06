@@ -3,7 +3,7 @@ package me.nathanfallet.kotlinjsfix.tasks
 import org.gradle.api.tasks.TaskAction
 import java.io.File
 
-abstract class RemoveDoNotUseOrImplementIt : AbstractPostProcessingTask(".d.ts") {
+abstract class RemoveDoNotUseOrImplementIt : AbstractPostProcessingTask(".d.ts", ".d.mts") {
 
     @TaskAction
     fun doAction() {
