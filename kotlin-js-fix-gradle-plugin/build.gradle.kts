@@ -31,3 +31,17 @@ gradlePlugin {
         }
     }
 }
+
+publishing {
+    repositories {
+        mavenLocal()
+        maven {
+            name = "GithubPackages"
+            url = uri("https://maven.pkg.github.com/lexisother/kotlin-js-fix")
+            credentials {
+                username = System.getenv("USERNAME")
+                password = System.getenv("TOKEN")
+            }
+        }
+    }
+}
